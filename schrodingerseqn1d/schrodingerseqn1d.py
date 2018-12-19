@@ -56,6 +56,6 @@ with sess.as_default():
     plt.plot(XVal,PlotVal)
     plt.xlabel('Domain')
     plt.ylabel('Wave Function')
-    plt.title('Wave Function Corresponding to Lowest Energy')
+    plt.title('Wave Function Corresponding to Lowest Energy ' + str(energy))
     plt.savefig(path + '/WaveFunction.png')
     #plt.show()
