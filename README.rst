@@ -34,20 +34,20 @@ This program solves 1D Schrodinger's Equation and plots the WaveFunction for low
 
 Inputs
 -----------
-Input is to provided in the active directory with text file config.txt in the working directory
-The value of constant c =  h/(2m) is to be given
-The number of fourier basis is to be provided. The fourier basis stars as 1, cos(x), sin(x), cos(2x), sin(2x) ...
-The number of nodes is to given
-Domain is to be input as list [start_location, end_locaiton]
-The potential values at each node is to be given
+| Input is to provided in the active directory with text file config.txt in the working directory
+| The value of constant c =  h/(2m) is to be given
+| The number of fourier basis is to be provided. The fourier basis stars as 1, cos(x), sin(x), cos(2x), sin(2x) ...
+| The number of nodes is to given
+| Domain is to be input as list [start_location, end_locaiton]
+| The potential values at each node is to be given
 
 Sample config.txt
 -----------------
-C = 1
-BASIS SIZE = 7
-NO OF NODES = 10
-DOMAIN = [-1,1]
-POTENTIAL = [1,2,3,4,5,6,7,8,9,10]
+| C = 1
+| BASIS SIZE = 7
+| NO OF NODES = 10
+| DOMAIN = [-1,1]
+| POTENTIAL = [1,2,3,4,5,6,7,8,9,10]
 
 Command for use
 --------------
@@ -57,7 +57,7 @@ python schrodingerseqn1d/schrodingerseqn1d.py
 
 Output 
 ------
-The output file is generated as WaveFunction.png. The Hamiltonian Matrix is printed in the console
+The output file is generated as WaveFunction.png. The Hamiltonian Matrix is printed in the console.
 
 
 Credits
