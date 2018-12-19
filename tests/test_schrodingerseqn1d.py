@@ -96,7 +96,7 @@ class test_ckhr(tf.test.TestCase):
             test = H_phi.eval()
             mock = mockH_Phi.eval()
             difference = test - mock
-            err = tf.math.abs(tf.reduce_sum(difference))
+            err = tf.math.abs(tf.reduce_sum(difference))    ## cummulative error
             self.assertAllEqual(err < 0.01, True)
             
     def test_get_H_matrix(self):
@@ -125,7 +125,7 @@ class test_ckhr(tf.test.TestCase):
             test = H_matrix.eval()
             mock = mockH_matrix.eval()
             difference = test - mock
-            err = tf.math.abs(tf.reduce_sum(difference))
+            err = tf.math.abs(tf.reduce_sum(difference)) ## cummulative error
             self.assertAllEqual(err < 0.01, True)
 
     def test_get_lowestEnergy(self):

@@ -1,6 +1,8 @@
 import numpy as np
 import sys
 
+
+## this module is for reading the input 
 class config:
     basisSize = 0
     numOfNodes = 0
@@ -13,17 +15,17 @@ class config:
         self.potential = []
 
         f = open(file, "r")
-        for line in f.readlines():
+        for line in f.readlines():                   ### line by line read
             line_read = line.split('=')
             # if line_read[0] == '\n':
             #     continue
             left = line_read[0].lstrip().rstrip()
             right = line_read[1].lstrip().rstrip()
 
-            if left.upper() == 'C':
+            if left.upper() == 'C':  # read constant
                 self.constant_c = int(right)
 
-            if left.upper() == 'BASIS SIZE':
+            if left.upper() == 'BASIS SIZE': 
                 self.basisSize = int(right)
 
             if left.upper() == 'NO OF NODES':
